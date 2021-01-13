@@ -1,4 +1,4 @@
-const log = console.log;
+
 const timer = (arr) => {
   let x, y, times;
   [x, y, ...times] = arr;
@@ -6,10 +6,9 @@ const timer = (arr) => {
     return a - b;
   });
   for (let i = 0; i < sorted.length; i++) {
-    log(sorted[i]);
     sorted[i] <= 0 || !Number(sorted[i]) ? null :
       setTimeout(() => {
-        process.stdout.write('.');
+        process.stdout.write('beep');
       }, sorted[i] * 1000);
   }
 };
